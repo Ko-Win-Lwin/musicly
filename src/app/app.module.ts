@@ -6,6 +6,8 @@ import { HeaderComponent } from './component/header/header.component';
 import {HomeComponent} from "./pages/home/home.component";
 import {PageNotFoundComponent} from "./pages/page-not-found/page-not-found.component";
 import { SearchBoxComponent } from './component/search-box/search-box.component';
+import { LeftNavigationComponent } from './component/left-navigation/left-navigation.component';
+import { MainViewComponent } from './component/main-view/main-view.component';
 
 
 
@@ -15,7 +17,9 @@ import { SearchBoxComponent } from './component/search-box/search-box.component'
     HeaderComponent,
     HomeComponent,
     PageNotFoundComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    LeftNavigationComponent,
+    MainViewComponent
   ],
   imports: [
     BrowserModule,

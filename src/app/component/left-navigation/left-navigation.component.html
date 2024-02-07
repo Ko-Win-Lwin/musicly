@@ -1,0 +1,100 @@
+<div class="position-relative text-light d-flex flex-column  align-items-start text-secondary py-3" style="height: 92.8vh; background: #2A2A2A; font-size: 0.8rem">
+  <div class="d-flex gap-3 align-items-center ms-3 py-2">
+    <div class="d-flex justify-content-center align-items-center">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small/happy-young-cute-illustration-face-profile-png.png" alt="profile"
+           class="rounded-circle d-block" style="width: 30px">
+    </div>
+    <span>Abe Shake Kumar</span>
+  </div>
+
+  <div class="d-flex gap-4 align-items-center ms-4 py-2">
+    <div class="d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-hard-drive"></i>
+    </div>
+    <span>Dashboard</span>
+  </div>
+
+  <div class="d-flex gap-4 align-items-center ms-4 py-2">
+    <div class="d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-headphones"></i>
+    </div>
+    <span>Artist</span>
+  </div>
+
+  <div class="d-flex gap-4 align-items-center ms-4 py-2">
+    <div class="d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-chart-simple"></i>
+    </div>
+    <span>Album</span>
+  </div>
+
+  <div class="d-flex gap-4 align-items-center ms-4 py-2">
+    <div class="d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-radio"></i>
+    </div>
+    <span>Genres</span>
+  </div>
+
+  <div (click)="showPages()" class="d-flex gap-4 align-items-center ms-4 py-2">
+    <div class="d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-file"></i>
+    </div>
+    <span>Pages</span>
+  </div>
+
+  <div *ngIf="isShowPages">
+    <div class="d-flex gap-4 align-items-center ms-5 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-brands fa-stumbleupon-circle"></i>
+      </div>
+      <span>Sign in</span>
+    </div>
+
+    <div class="d-flex gap-4 align-items-center ms-5 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-brands fa-stumbleupon-circle"></i>
+      </div>
+      <span>Sign up</span>
+    </div>
+
+    <div class="d-flex gap-4 align-items-center ms-5 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-brands fa-stumbleupon-circle"></i>
+      </div>
+      <span>Reset password</span>
+    </div>
+
+    <div class="d-flex gap-4 align-items-center ms-5 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-brands fa-stumbleupon-circle"></i>
+      </div>
+      <span>Contact</span>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column ms-4 mt-4 ">
+    <p class="text-secondary fw-bold" style="font-size: 0.9rem">Your Playlist</p>
+
+    <div class="d-flex gap-4 py-2 align-items-center">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-circle-plus"></i>
+      </div>
+      <span>Create a playlist</span>
+    </div>
+
+    <div class="d-flex gap-4 py-2 align-items-center">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-book"></i>
+      </div>
+      <span>Greatest hits</span>
+    </div>
+
+    <div class="d-flex gap-4 py-2 align-items-center">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-book"></i>
+      </div>
+      <span>Songs of dream</span>
+    </div>
+  </div>
+</div>
+
