@@ -6,8 +6,8 @@
   <hr>
 
   <div class="row row-gap-4">
-      <div *ngFor="let x of cards" class="col-4">
-          <app-song-card></app-song-card>
+      <div *ngFor="let album of albums.slice(0,6)" class="col-4">
+          <app-song-card [album]="album"></app-song-card>
       </div>
   </div>
 

@@ -6,6 +6,7 @@
 
   <hr>
   <div class="d-flex flex-wrap gap-2">
-    <img *ngFor="let artist of artists" src="https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small/happy-young-cute-illustration-face-profile-png.png" alt="profile" class="rounded-circle img-thumbnail" style="width: 30px">
+      <img *ngFor="let artist of artists" [src]="artist.artworkUrl100" alt="profile" class="rounded-circle " style="width: 30px" >
   </div>
+
 </div>

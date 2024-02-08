@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {UserService} from "../../services/user.service";
+import {MusicService} from "../../services/music.service";
 
 @Component({
   selector: 'app-following-artists',
@@ -7,11 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FollowingArtistsComponent implements OnInit {
 
-  artists = [1,2,3,4,4,1,1,1,1,1,1,1,1,1,11,1,]
+  artists: any
 
-  constructor() { }
+  constructor(private _artist: MusicService) { }
 
   ngOnInit(): void {
+    this._artist.getAlbum().subscribe((user) => {
+
+      this.artists = user['results']
+    })
   }
 
 }

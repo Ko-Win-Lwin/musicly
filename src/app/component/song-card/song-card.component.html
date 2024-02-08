@@ -1,7 +1,7 @@
 <div class="bg-transparent">
   <div>
-    <img src="https://yt3.googleusercontent.com/ytc/AIf8zZT26ptVRLOGSmtUb3j99i5bOJfLmamqxhYgQdghqg=s900-c-k-c0x00ffffff-no-rj"
-         class="img-thumbnail" alt="album logo">
-    <p class="mt-2 text-secondary" style="font-size: 0.9rem">Album name</p>
+    <img [src]="album.artworkUrl100"
+         class="rounded w-75" alt="album logo">
+    <p class="mt-2 text-secondary" style="font-size: 0.9rem">{{ album.artistName.split(",")[0] }}</p>
   </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MusicService} from "../../services/music.service";
 
 @Component({
   selector: 'app-favourite-list',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class FavouriteListComponent implements OnInit {
 
   cards = [1,3,4,5,5,5]
-
-  constructor() { }
+  albums = []
+  constructor(private _data: MusicService) { }
 
   ngOnInit(): void {
+    this._data.getAlbum().subscribe((data) => {
+      this.albums = data['results']
+
+    })
   }
 
 }

@@ -1,10 +1,10 @@
 <div class="d-flex align-items-center gap-4 mb-4">
   <div>
-    <img src="https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small/happy-young-cute-illustration-face-profile-png.png" alt="profile"
+    <img [src]="chat.picture.large" alt="profile"
          class="rounded-circle" style="width: 30px">
   </div>
   <div style="font-size: 0.7rem">
-    <p class="fw-bold">Name</p>
-    <p class="text-secondary">Location</p>
+    <p class="fw-bold">{{ chat.name.first }} {{ chat.name.last}}</p>
+    <p class="text-secondary">{{ chat.location.country }}</p>
   </div>
 </div>

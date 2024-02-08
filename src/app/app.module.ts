@@ -23,7 +23,8 @@ import { SongCardComponent } from './component/song-card/song-card.component';
 import { FriendsComponent } from './component/friends/friends.component';
 import { FriendProfileCardComponent } from './component/friend-profile-card/friend-profile-card.component';
 import { ChatComponentComponent } from './component/latest-chat/chat-component/chat-component.component';
-
+import { MusicService } from "./services/music.service";
+import { HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -53,9 +54,10 @@ import { ChatComponentComponent } from './component/latest-chat/chat-component/c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MusicService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

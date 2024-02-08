@@ -6,8 +6,8 @@
   <hr>
 
   <div class="row row-gap-4">
-    <div *ngFor="let x of friends" class="col-3">
-      <app-friend-profile-card></app-friend-profile-card>
+    <div *ngFor="let friend of friends.slice(0,4)" class="col-3">
+      <app-friend-profile-card [friend]="friend"></app-friend-profile-card>
     </div>
   </div>
 
