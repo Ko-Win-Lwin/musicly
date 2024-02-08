@@ -1,0 +1,14 @@
+<div class="bg-white border rounded p-4">
+  <h3 class="fs-6 d-flex gap-2 align-items-center">
+    <i class="fa-solid fa-heart text-success"></i>
+    <span class="text-secondary">Your friends are listening to</span>
+  </h3>
+  <hr>
+
+  <div class="row row-gap-4">
+    <div *ngFor="let x of friends" class="col-3">
+      <app-friend-profile-card></app-friend-profile-card>
+    </div>
+  </div>
+
+</div>

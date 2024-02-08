@@ -1,0 +1,11 @@
+<div class="bg-white border rounded p-4">
+  <h3 class="fs-6 d-flex gap-2 align-items-center">
+    <i class="fa-solid fa-clock-rotate-left text-success"></i>
+    <span class="text-secondary">Following Artists</span>
+  </h3>
+
+  <hr>
+  <div class="d-flex flex-wrap gap-2">
+    <img *ngFor="let artist of artists" src="https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small/happy-young-cute-illustration-face-profile-png.png" alt="profile" class="rounded-circle img-thumbnail" style="width: 30px">
+  </div>
+</div>

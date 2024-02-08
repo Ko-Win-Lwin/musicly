@@ -1,41 +1,54 @@
-<div class="position-relative text-light d-flex flex-column  align-items-start text-secondary py-3" style="height: 92.8vh; background: #2A2A2A; font-size: 0.8rem">
-  <div class="d-flex gap-3 align-items-center ms-3 py-2">
-    <div class="d-flex justify-content-center align-items-center">
-      <img src="https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small/happy-young-cute-illustration-face-profile-png.png" alt="profile"
-           class="rounded-circle d-block" style="width: 30px">
+<div class="position-relative text-light d-flex flex-column align-items-start text-secondary py-3" style="height: 90vh; background: #2A2A2A; font-size: 0.8rem">
+  <a routerLink="/profile">
+    <div class="d-flex gap-3 align-items-center ms-3 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small/happy-young-cute-illustration-face-profile-png.png" alt="profile"
+             class="rounded-circle d-block" style="width: 30px">
+      </div>
+      <span>Abe Shake Kumar</span>
     </div>
-    <span>Abe Shake Kumar</span>
-  </div>
+  </a>
 
-  <div class="d-flex gap-4 align-items-center ms-4 py-2">
-    <div class="d-flex justify-content-center align-items-center">
-      <i class="fa-solid fa-hard-drive"></i>
+
+  <a routerLink="/dashboard">
+    <div class="d-flex gap-4 align-items-center ms-4 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-hard-drive"></i>
+      </div>
+      <span>Dashboard</span>
     </div>
-    <span>Dashboard</span>
-  </div>
+  </a>
 
-  <div class="d-flex gap-4 align-items-center ms-4 py-2">
-    <div class="d-flex justify-content-center align-items-center">
-      <i class="fa-solid fa-headphones"></i>
+  <a routerLink="/artist">
+    <div class="d-flex gap-4 align-items-center ms-4 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-headphones"></i>
+      </div>
+      <span>Artist</span>
     </div>
-    <span>Artist</span>
-  </div>
+  </a>
 
-  <div class="d-flex gap-4 align-items-center ms-4 py-2">
-    <div class="d-flex justify-content-center align-items-center">
-      <i class="fa-solid fa-chart-simple"></i>
+
+  <a routerLink="/album">
+    <div class="d-flex gap-4 align-items-center ms-4 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-chart-simple"></i>
+      </div>
+      <span>Album</span>
     </div>
-    <span>Album</span>
-  </div>
+  </a>
 
-  <div class="d-flex gap-4 align-items-center ms-4 py-2">
-    <div class="d-flex justify-content-center align-items-center">
-      <i class="fa-solid fa-radio"></i>
+  <a routerLink="/genres">
+    <div class="d-flex gap-4 align-items-center ms-4 py-2">
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-radio"></i>
+      </div>
+      <span>Genres</span>
     </div>
-    <span>Genres</span>
-  </div>
+  </a>
 
-  <div (click)="showPages()" class="d-flex gap-4 align-items-center ms-4 py-2">
+
+  <div (click)="showPages()" class="d-flex gap-4 align-items-center ms-4 py-2" style="cursor: pointer; color: darkgray">
     <div class="d-flex justify-content-center align-items-center">
       <i class="fa-solid fa-file"></i>
     </div>
@@ -43,58 +56,73 @@
   </div>
 
   <div *ngIf="isShowPages">
-    <div class="d-flex gap-4 align-items-center ms-5 py-2">
-      <div class="d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-stumbleupon-circle"></i>
+    <a routerLink="/pages/login">
+      <div class="d-flex gap-4 align-items-center ms-5 py-2">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-brands fa-stumbleupon-circle"></i>
+        </div>
+        <span>Sign in</span>
       </div>
-      <span>Sign in</span>
-    </div>
+    </a>
 
-    <div class="d-flex gap-4 align-items-center ms-5 py-2">
-      <div class="d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-stumbleupon-circle"></i>
+    <a routerLink="/pages/signup">
+      <div class="d-flex gap-4 align-items-center ms-5 py-2">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-brands fa-stumbleupon-circle"></i>
+        </div>
+        <span>Sign up</span>
       </div>
-      <span>Sign up</span>
-    </div>
+    </a>
 
-    <div class="d-flex gap-4 align-items-center ms-5 py-2">
-      <div class="d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-stumbleupon-circle"></i>
+    <a routerLink="/pages/reset-password">
+      <div class="d-flex gap-4 align-items-center ms-5 py-2">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-brands fa-stumbleupon-circle"></i>
+        </div>
+        <span>Reset password</span>
       </div>
-      <span>Reset password</span>
-    </div>
+    </a>
 
-    <div class="d-flex gap-4 align-items-center ms-5 py-2">
-      <div class="d-flex justify-content-center align-items-center">
-        <i class="fa-brands fa-stumbleupon-circle"></i>
+    <a routerLink="/pages/contact">
+      <div class="d-flex gap-4 align-items-center ms-5 py-2">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-brands fa-stumbleupon-circle"></i>
+        </div>
+        <span>Contact</span>
       </div>
-      <span>Contact</span>
-    </div>
+    </a>
   </div>
 
   <div class="d-flex flex-column ms-4 mt-4 ">
     <p class="text-secondary fw-bold" style="font-size: 0.9rem">Your Playlist</p>
 
-    <div class="d-flex gap-4 py-2 align-items-center">
-      <div class="d-flex justify-content-center align-items-center">
-        <i class="fa-solid fa-circle-plus"></i>
+    <a routerLink="/your-playlist/create-a-playlist">
+      <div class="d-flex gap-4 py-2 align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <span>Create a playlist</span>
       </div>
-      <span>Create a playlist</span>
-    </div>
+    </a>
 
-    <div class="d-flex gap-4 py-2 align-items-center">
-      <div class="d-flex justify-content-center align-items-center">
-        <i class="fa-solid fa-book"></i>
+    <a routerLink="/your-playlist/greatest-hits">
+      <div class="d-flex gap-4 py-2 align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <span>Greatest Hits</span>
       </div>
-      <span>Greatest hits</span>
-    </div>
+    </a>
 
-    <div class="d-flex gap-4 py-2 align-items-center">
-      <div class="d-flex justify-content-center align-items-center">
-        <i class="fa-solid fa-book"></i>
+    <a routerLink="/your-playlist/songs-of-dream">
+      <div class="d-flex gap-4 py-2 align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-circle-plus"></i>
+        </div>
+        <span>Songs of dream</span>
       </div>
-      <span>Songs of dream</span>
-    </div>
+    </a>
+
   </div>
 </div>
 
